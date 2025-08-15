@@ -524,7 +524,7 @@ class _EnhancedUserCardState extends State<EnhancedUserCard>
     ));
 
     // Start animation with delay
-    Future.delayed(Duration(milliseconds: widget.delay), () {
+    Future.delayed(Duration(milliseconds: widgets.delay), () {
       if (mounted) _animationController.forward();
     });
   }
@@ -562,7 +562,7 @@ class _EnhancedUserCardState extends State<EnhancedUserCard>
                   onEnter: (_) => _onHover(true),
                   onExit: (_) => _onHover(false),
                   child: GestureDetector(
-                    onTap: widget.onTap,
+                    onTap: widgets.onTap,
                     child: Container(
                       width: double.infinity,
                       padding: const EdgeInsets.all(24),
@@ -570,15 +570,15 @@ class _EnhancedUserCardState extends State<EnhancedUserCard>
                         borderRadius: BorderRadius.circular(24),
                         gradient: LinearGradient(
                           colors: [
-                            widget.primaryColor,
-                            widget.secondaryColor,
+                            widgets.primaryColor,
+                            widgets.secondaryColor,
                           ],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: widget.primaryColor.withOpacity(_isHovered ? 0.4 : 0.3),
+                            color: widgets.primaryColor.withOpacity(_isHovered ? 0.4 : 0.3),
                             blurRadius: _isHovered ? 25 : 20,
                             offset: Offset(0, _isHovered ? 12 : 8),
                             spreadRadius: _isHovered ? 2 : 0,
@@ -607,9 +607,9 @@ class _EnhancedUserCardState extends State<EnhancedUserCard>
                               ],
                             ),
                             child: Icon(
-                              widget.icon,
+                              widgets.icon,
                               size: 40,
-                              color: widget.primaryColor,
+                              color: widgets.primaryColor,
                             ),
                           ),
 
@@ -617,7 +617,7 @@ class _EnhancedUserCardState extends State<EnhancedUserCard>
 
                           // Title
                           Text(
-                            widget.title,
+                            widgets.title,
                             style: const TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
@@ -630,7 +630,7 @@ class _EnhancedUserCardState extends State<EnhancedUserCard>
 
                           // Subtitle
                           Text(
-                            widget.subtitle,
+                            widgets.subtitle,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 14,
@@ -645,10 +645,10 @@ class _EnhancedUserCardState extends State<EnhancedUserCard>
                           SizedBox(
                             width: double.infinity,
                             child: ElevatedButton(
-                              onPressed: widget.onTap,
+                              onPressed: widgets.onTap,
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.white,
-                                foregroundColor: widget.primaryColor,
+                                foregroundColor: widgets.primaryColor,
                                 padding: const EdgeInsets.symmetric(
                                   vertical: 16,
                                   horizontal: 24,
@@ -660,7 +660,7 @@ class _EnhancedUserCardState extends State<EnhancedUserCard>
                                 shadowColor: Colors.black.withOpacity(0.2),
                               ),
                               child: Text(
-                                widget.buttonText,
+                                widgets.buttonText,
                                 style: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,

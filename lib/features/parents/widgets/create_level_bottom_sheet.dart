@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:level_up_heroes/core/constants/app_colors.dart';
-import 'package:level_up_heroes/features/parents/widget/level_input_field.dart';
+import 'package:level_up_heroes/features/parents/widgets/level_input_field.dart';
 
 import 'bottom_sheet_buttons.dart';
 import 'custom_input_field.dart';

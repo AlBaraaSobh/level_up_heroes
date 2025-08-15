@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:level_up_heroes/core/constants/app_colors.dart';
-import 'package:level_up_heroes/features/parents/widget/create_level_bottom_sheet.dart';
-import 'package:level_up_heroes/features/parents/widget/level_card.dart';
-import 'package:level_up_heroes/features/parents/widget/parents_app_bar.dart';
+import 'package:level_up_heroes/features/parents/widgets/create_level_bottom_sheet.dart';
+import 'package:level_up_heroes/features/parents/widgets/level_card.dart';
+import 'package:level_up_heroes/features/parents/widgets/parents_app_bar.dart';
 
 class RewardsScreen extends StatefulWidget {
   const RewardsScreen({super.key});

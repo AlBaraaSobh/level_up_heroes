@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:level_up_heroes/core/constants/app_colors.dart';
-import '../widget/parents_app_bar.dart';
-import '../widget/task_card.dart';
-import '../widget/tasks_filter.dart';
-import '../widget/tasks_stats.dart';
-import '../widget/tasks_list.dart';
-import '../widget/create_task_bottom_sheet.dart';
+import '../widgets/parents_app_bar.dart';
+import '../widgets/task_card.dart';
+import '../widgets/tasks_filter.dart';
+import '../widgets/tasks_stats.dart';
+import '../widgets/tasks_list.dart';
+import '../widgets/create_task_bottom_sheet.dart';
 
 class TasksScreen extends StatefulWidget {
   const TasksScreen({super.key});

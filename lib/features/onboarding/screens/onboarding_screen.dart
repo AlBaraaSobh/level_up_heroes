@@ -132,7 +132,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 // import 'package:level_up_heroes/core/constants/app_colors.dart';
 //
 // import '../models/onboarding_model.dart';
-// import '../widget/onboarding_page.dart';
+// import '../widgets/onboarding_page.dart';
 //
 // class OnboardingScreen extends StatefulWidget {
 //   const OnboardingScreen({super.key});

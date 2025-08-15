@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:level_up_heroes/core/constants/app_colors.dart';
 
-import '../widget/add_kids_bottom_sheet.dart';
-import '../widget/kids_card.dart';
-import '../widget/parents_app_bar.dart';
+import '../widgets/add_kids_bottom_sheet.dart';
+import '../widgets/kids_card.dart';
+import '../widgets/parents_app_bar.dart';
 
 class ParentHomeScreen extends StatefulWidget {
   const ParentHomeScreen({super.key});
